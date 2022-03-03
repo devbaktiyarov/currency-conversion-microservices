@@ -20,6 +20,8 @@ public class ExchangeValue {
 	private BigDecimal conversationMultiple;
 	private int port;
 	
+	public ExchangeValue() {}
+	
 	public ExchangeValue(Long id, String from, String to, BigDecimal conversationMultiple) {
 		super();
 		this.id = id;
