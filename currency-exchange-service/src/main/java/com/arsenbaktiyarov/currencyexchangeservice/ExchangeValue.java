@@ -17,17 +17,17 @@ public class ExchangeValue {
 	
 	@Column(name="currency_to")
 	private String to;
-	private BigDecimal conversationMultiple;
+	private BigDecimal conversionMultiple;
 	private int port;
 	
 	public ExchangeValue() {}
 	
-	public ExchangeValue(Long id, String from, String to, BigDecimal conversationMultiple) {
+	public ExchangeValue(Long id, String from, String to, BigDecimal conversionMultiple) {
 		super();
 		this.id = id;
 		this.from = from;
 		this.to = to;
-		this.conversationMultiple = conversationMultiple;
+		this.conversionMultiple = conversionMultiple;
 	}
 
 	public Long getId() {
@@ -54,12 +54,12 @@ public class ExchangeValue {
 		this.to = to;
 	}
 
-	public BigDecimal getConversationMultiple() {
-		return conversationMultiple;
+	public BigDecimal getConversionMultiple() {
+		return conversionMultiple;
 	}
 
-	public void setConversationMultiple(BigDecimal conversationMultiple) {
-		this.conversationMultiple = conversationMultiple;
+	public void setConversationMultiple(BigDecimal conversionMultiple) {
+		this.conversionMultiple = conversionMultiple;
 	}
 
 	public int getPort() {
